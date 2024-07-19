@@ -11,8 +11,11 @@ import {
 import { HiDownload } from 'react-icons/hi'
 export default function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
-      <div className='flex items-center justify-center'>
+    <section
+      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'
+      id='home'
+    >
+      <div className='flex items-center justify-center '>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -41,7 +44,7 @@ export default function Intro() {
         <span className='font-bold'>
           Front-End Developer
         </span>{' '}
-        with <span className='font-bold'>1.5 year</span> of
+        with <span className='font-bold'>1 year</span> of
         experience. I enjoy building{' '}
         <span className='italic'>sites & apps</span>. My
         focus is{' '}
