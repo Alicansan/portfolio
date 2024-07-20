@@ -72,12 +72,28 @@ export const experiencesData = [
     date: 'Yılmaz Law Office - 12/2019 - 09/2022',
   },
   {
+    title: 'Associate Degree in Web Design and Coding',
+    location: 'Eskisehir, Turkey',
+    description:
+      'Studied web design and coding, mastering HTML, CSS, JavaScript, and React. Developed skills in UX/UI design and built responsive web applications. Gained practical experience with coding projects and problem-solving.',
+    icon: React.createElement(LuGraduationCap),
+    date: 'Anadolu University  - 2018 - 2020',
+  },
+  {
     title: 'Customer Advisor',
     location: 'Remote',
     description:
       'Answered questions about products and services, provided troubleshooting and tech support via chat, email, and phone. Became familiar with the Apple ecosystem and their conduct in working with third-party firms and apps.',
     icon: React.createElement(CgWorkAlt),
-    date: 'Apple Inc. - 07/2017 - 05/2010',
+    date: 'Apple Inc. - 07/2017 - 05/2018',
+  },
+  {
+    title: 'Bachelors Degree in Archeology',
+    location: 'Eskisehir, Turkey',
+    description:
+      'Studied archaeology, developing strong analytical skills and attention to detail. Conducted research and interpreted data, enhancing problem-solving abilities. Gained experience in documenting findings and creating reports, and collaborated effectively on team projects.',
+    icon: React.createElement(LuGraduationCap),
+    date: 'Anadolu University - 2012 - 2019',
   },
 ] as const
 
@@ -192,12 +208,10 @@ export const skillsData = [
   'React',
   'Next.js',
   'Node.js',
-  'Express',
   'TailwindCSS',
   'Framer',
   'Material UI',
   'Aceternity',
-  'JSON',
   'Shadcn-UI',
   'MsSql',
   'PostgreSQL',

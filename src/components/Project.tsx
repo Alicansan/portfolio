@@ -45,7 +45,7 @@ export default function Project({
       className='group mb-3 sm:mb-7 last:mb-0'
     >
       <section className=' bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem]  hover:bg-gray-200 transition '>
-        <div className='py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[58%] flex flex-col h-full group-even:ml-[17.4rem]'>
+        <div className='py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[58%] flex flex-col h-full sm:group-even:ml-[17.4rem]'>
           <h3 className='text-2xl font-semibold '>
             {title}
           </h3>
@@ -69,7 +69,7 @@ export default function Project({
             alt={title}
             quality={90}
             className='relative sm:absolute top-8 sm:-right-40 w-[28.25rem] rounded-t-lg shadow-2xl 
-          group-even:right-[initial] group-even:-left-40 group-hover-scale-110
+          group-even:right-[initial] sm:group-even:-left-40 group-hover-scale-110
           group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 transition
           group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 '
           />
