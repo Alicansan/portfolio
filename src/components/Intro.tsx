@@ -9,9 +9,24 @@ import {
   BsLinkedin,
 } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '@/context/ActiveSection'
+import { useEffect } from 'react'
+
 export default function Intro() {
+  const { ref, inView } = useInView({ threshold: 0.75 })
+  const { activeSection, setActiveSection } =
+    useActiveSectionContext()
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection('Home')
+    }
+  }, [inView, setActiveSection])
+
   return (
     <section
+      ref={ref}
       className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'
       id='home'
     >

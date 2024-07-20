@@ -1,3 +1,4 @@
+import { Inter } from 'next/font/google'
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
@@ -7,6 +8,7 @@ import nitelifenav from '@/public/nitelifenav.png'
 import propublic from '@/public/propublic.png'
 import nikewebsite from '@/public/nikewebsite.png'
 import campingsite from '@/public/campingsite.png'
+import portfolio from '@/public/portfolio.png'
 import { link } from 'fs'
 
 export const links = [
@@ -149,13 +151,21 @@ export const projectsData = [
     link: 'https://mockup-propublic.vercel.app/',
   },
   {
-    title: 'Nike Landing Page',
+    title: 'Portfolio',
     description:
-      'A clone of the Nike shoes landing page. This project focuses on replicating the visual design of the original site without adding functionality. It showcases my ability to accurately recreate complex web layouts.',
-    tags: ['React', 'Vite', 'Tailwind'],
-    imageUrl: nikewebsite,
-    link: 'https://github.com/Alicansan/nike_website',
+      'A Recursion! This project involved creating a responsive design for a portfolio website, showcasing my work and experience on styling and design. It features a clean and modern layout, with a focus on showcasing my skills and projects.',
+    tags: [
+      'React',
+      'Next.js',
+      'Tailwind',
+      'TypeScript',
+      'Framer Motion',
+      'Intersection Observer',
+    ],
+    imageUrl: portfolio,
+    link: 'https://alicansanportfolio-git-master-alicans-projects-e59d79a8.vercel.app/#home',
   },
+
   {
     title: 'Camping Area Site',
     description:
@@ -163,6 +173,14 @@ export const projectsData = [
     tags: ['React', 'Next.js', 'Tailwind', 'TypeScript'],
     imageUrl: campingsite,
     link: 'https://github.com/Alicansan/travel_app',
+  },
+  {
+    title: 'Nike Landing Page',
+    description:
+      'A clone of the Nike shoes landing page. This project focuses on replicating the visual design of the original site without adding functionality. It showcases my ability to accurately recreate complex web layouts.',
+    tags: ['React', 'Vite', 'Tailwind'],
+    imageUrl: nikewebsite,
+    link: 'https://github.com/Alicansan/nike_website',
   },
 ] as const
 
