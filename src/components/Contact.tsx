@@ -2,14 +2,24 @@ import React from 'react'
 import SectionHeading from './SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
 import { FaPaperPlane } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact', 0.5)
   return (
-    <section
+    <motion.section
       ref={ref}
       id='contact'
-      className='mb-20 max-w-[min(100%,38rem)] scroll-mt-28 text-center sm:mb-28'
+      className='mb-20 max-w-[min(100%,38rem)] scroll-mt-28 text-center sm:mb-28 '
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
     >
       <SectionHeading>Contact Me</SectionHeading>
       <p className='text-gray-700'>
@@ -42,6 +52,6 @@ export default function Contact() {
           <FaPaperPlane className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 ' />
         </button>
       </form>
-    </section>
+    </motion.section>
   )
 }

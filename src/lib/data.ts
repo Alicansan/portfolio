@@ -183,7 +183,7 @@ export const projectsData = [
       'Intersection Observer',
     ],
     imageUrl: portfolio,
-    link: 'https://alicansanportfolio-git-master-alicans-projects-e59d79a8.vercel.app/#home',
+    link: 'https://github.com/Alicansan/portfolio',
   },
 
   {
@@ -192,7 +192,7 @@ export const projectsData = [
       'A landing page for a camping area. This project highlights my skills in front-end development and design, providing a visually appealing and informative webpage for potential visitors.',
     tags: ['React', 'Next.js', 'Tailwind', 'TypeScript'],
     imageUrl: campingsite,
-    link: 'https://github.com/Alicansan/travel_app',
+    link: 'https://travel-app-seven-murex.vercel.app/',
   },
   {
     title: 'Nike Landing Page',
@@ -200,7 +200,7 @@ export const projectsData = [
       'A clone of the Nike shoes landing page. This project focuses on replicating the visual design of the original site without adding functionality. It showcases my ability to accurately recreate complex web layouts.',
     tags: ['React', 'Vite', 'Tailwind'],
     imageUrl: nikewebsite,
-    link: 'https://github.com/Alicansan/nike_website',
+    link: ' https://nike-website-rosy.vercel.app/',
   },
 ] as const
 
