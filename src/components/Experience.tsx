@@ -51,26 +51,6 @@ export default function Experience() {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      <div className='mt-12 mb-12'>
-        <SectionHeading>Certificates</SectionHeading>
-        {certificatesData.map((certificate, index) => (
-          <a
-            key={index}
-            href={certificate.url}
-            className='mt-4'
-            target='_blank '
-          >
-            <div
-              key={index}
-              className='visited:text-purple-600 text-gray-500 flex flex-col items-center hover:scale-105 transition-transform hover:text-slate-900'
-            >
-              <p className='mt-4 text-center'>
-                {certificate.title}
-              </p>
-            </div>
-          </a>
-        ))}
-      </div>
     </section>
   )
 }

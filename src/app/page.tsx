@@ -1,5 +1,7 @@
 'use client'
 import About from '@/components/About'
+import Certificates from '@/components/Certificates'
+import Contact from '@/components/Contact'
 import Experience from '@/components/Experience'
 import Intro from '@/components/Intro'
 import Projects from '@/components/Projects'
@@ -15,6 +17,8 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <Certificates />
+      <Contact />
     </main>
   )
 }
