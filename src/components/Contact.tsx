@@ -34,6 +34,7 @@ export default function Contact() {
       </p>
       <form className='mt-10 flex flex-col' action=''>
         <input
+          required
           className='h-14 rounded-lg border border-black/10 px-4 '
           type='email'
           placeholder='Your Email'

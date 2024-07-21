@@ -165,7 +165,7 @@ export const projectsData = [
   {
     title: 'Propublic',
     description:
-      'A public web app for e-sports coaching. This project involved translating a Figma design into landing and coach profile pages. The highlight of this project is the precise implementation of the design, demonstrating my ability to convert Figma mockups into  functional webpages.',
+      'A public web app for e-sports coaching. This project involved translating a Figma design into a landing page and coach profile pages. The highlight of this project is the precise implementation of the design, demonstrating my ability to convert Figma mockups into  functional webpages.',
     tags: ['React', 'Next.js', 'Shadcn', 'Tailwind'],
     imageUrl: propublic,
     link: 'https://mockup-propublic.vercel.app/',
