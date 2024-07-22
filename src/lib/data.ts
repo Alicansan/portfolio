@@ -181,6 +181,7 @@ export const projectsData = [
       'TypeScript',
       'Framer Motion',
       'Intersection Observer',
+      'Resend',
     ],
     imageUrl: portfolio,
     link: 'https://github.com/Alicansan/portfolio',

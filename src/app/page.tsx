@@ -1,4 +1,3 @@
-'use client'
 import About from '@/components/About'
 import Certificates from '@/components/Certificates'
 import Contact from '@/components/Contact'

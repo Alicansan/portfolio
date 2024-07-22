@@ -1,3 +1,4 @@
+'use client'
 import { certificatesData } from '@/lib/data'
 import React from 'react'
 import SectionHeading from './SectionHeading'

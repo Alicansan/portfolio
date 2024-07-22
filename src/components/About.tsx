@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
