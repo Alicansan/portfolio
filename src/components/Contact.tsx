@@ -1,19 +1,21 @@
 'use client'
+
 import React from 'react'
 import SectionHeading from './SectionHeading'
-import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
+import { useSectionInView } from '@/lib/hooks'
 import { sendEmail } from '@/actions/sendEmail'
 import SubmitButton from './SubmitButton'
+import toast from 'react-hot-toast'
 
 export default function Contact() {
-  const { ref } = useSectionInView('Contact', 0.5)
+  const { ref } = useSectionInView('Contact')
 
   return (
     <motion.section
-      ref={ref}
       id='contact'
-      className='mb-20 max-w-[min(100%,38rem)] scroll-mt-28 text-center sm:mb-28 '
+      ref={ref}
+      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
       }}
@@ -23,39 +25,51 @@ export default function Contact() {
       transition={{
         duration: 1,
       }}
+      viewport={{
+        once: true,
+      }}
     >
-      <SectionHeading>Contact Me</SectionHeading>
-      <p className='text-gray-700'>
-        Please contact me directy at{' '}
+      <SectionHeading>Contact me</SectionHeading>
+
+      <p className='text-gray-700 -mt-6 dark:text-white/80'>
+        Please contact me directly at{' '}
         <a
-          className='text-slate-600 hover:text-purple-800'
-          href='mailto:alicansan2606@gmail.com'
+          className='underline'
+          href='mailto:example@gmail.com'
         >
-          alicansan2606@gmail.com
+          example@gmail.com
         </a>{' '}
         or through this form.
       </p>
+
       <form
-        className='mt-10 flex flex-col'
-        action={async (formData: FormData) => {
-          await sendEmail(formData)
+        className='mt-10 flex flex-col dark:text-black'
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData)
+
+          if (error) {
+            toast.error(error)
+            return
+          }
+
+          toast.success('Email sent successfully!')
         }}
       >
         <input
-          required
+          className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           name='senderEmail'
-          maxLength={300}
-          className='h-14 rounded-lg border border-black/10 px-4 '
           type='email'
-          placeholder='Your Email'
+          required
+          maxLength={500}
+          placeholder='Your email'
         />
         <textarea
-          maxLength={3600}
-          required
+          className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           name='message'
-          className='h-52 my-3 rounded-lg border border-black/10 px-2'
           placeholder='Your message'
-        ></textarea>
+          required
+          maxLength={5000}
+        />
         <SubmitButton />
       </form>
     </motion.section>
