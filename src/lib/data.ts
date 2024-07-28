@@ -170,22 +170,6 @@ export const projectsData = [
     imageUrl: propublic,
     link: 'https://mockup-propublic.vercel.app/',
   },
-  {
-    title: 'Portfolio',
-    description:
-      'A Recursion! This project involved creating a responsive design for a portfolio website, showcasing my work and experience on styling and design. It features a clean and modern layout, with a focus on showcasing my skills and projects.',
-    tags: [
-      'React',
-      'Next.js',
-      'Tailwind',
-      'TypeScript',
-      'Framer Motion',
-      'Intersection Observer',
-      'Resend',
-    ],
-    imageUrl: portfolio,
-    link: 'https://github.com/Alicansan/portfolio',
-  },
 
   {
     title: 'Camping Area Site',
