@@ -164,7 +164,7 @@ export const projectsData = [
   {
     title: 'Expense Tracker',
     description:
-      'A full-stack single page expense tracker web app built with Prisma for ORM,  Clerk for authentication and Neon Postgres for database. The app allows users to sign in, manage transactions, and track their spending. Data is securely stored in a database, with real-time updates and a responsive design. This project showcases my skills in front-end and back-end development, API integration, and user authentication',
+      'A full-stack expense tracker built with Prisma, Clerk, and Neon Postgres. Users can sign in, manage transactions, and track spending. The app features real-time updates, secure data storage, and a responsive design.',
     tags: [
       'Next.js',
       'TypeScript',
