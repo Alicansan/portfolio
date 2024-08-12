@@ -1,14 +1,13 @@
-import { Inter } from 'next/font/google'
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
 import fetchclicks from '@/public/fetchclicks.png'
-import nitelifenav from '@/public/nitelifenav.png'
 import propublic from '@/public/propublic.png'
 import nikewebsite from '@/public/nikewebsite.png'
 import campingsite from '@/public/campingsite.png'
-import portfolio from '@/public/portfolio.png'
+import expensetracker from '@/public/expensetracker.png'
+
 import { link } from 'fs'
 
 export const links = [
@@ -163,10 +162,25 @@ export const projectsData = [
     link: 'https://fetchclicks.vercel.app/',
   },
   {
+    title: 'Expense Tracker',
+    description:
+      'A full-stack single page expense tracker web app built with Prisma for ORM,  Clerk for authentication and Neon Postgres for database. The app allows users to sign in, manage transactions, and track their spending. Data is securely stored in a database, with real-time updates and a responsive design. This project showcases my skills in front-end and back-end development, API integration, and user authentication',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'Neon Postgres',
+      'Prisma',
+      'Clerk',
+    ],
+    imageUrl: expensetracker,
+    link: 'https://expense-tracker-beta-dun.vercel.app/',
+  },
+  {
     title: 'Propublic',
     description:
       'A public web app for e-sports coaching. This project involved translating a Figma design into a landing page and coach profile pages. The highlight of this project is the precise implementation of the design, demonstrating my ability to convert Figma mockups into  functional webpages.',
-    tags: ['React', 'Next.js', 'Shadcn', 'Tailwind'],
+    tags: ['Next.js', 'Shadcn', 'Tailwind'],
     imageUrl: propublic,
     link: 'https://mockup-propublic.vercel.app/',
   },
@@ -175,7 +189,7 @@ export const projectsData = [
     title: 'Camping Area Site',
     description:
       'A landing page for a camping area. This project highlights my skills in front-end development and design, providing a visually appealing and informative webpage for potential visitors.',
-    tags: ['React', 'Next.js', 'Tailwind', 'TypeScript'],
+    tags: ['Next.js', 'Tailwind', 'TypeScript'],
     imageUrl: campingsite,
     link: 'https://travel-app-seven-murex.vercel.app/',
   },
@@ -183,7 +197,7 @@ export const projectsData = [
     title: 'Nike Landing Page',
     description:
       'A clone of the Nike shoes landing page. This project focuses on replicating the visual design of the original site without adding functionality. It showcases my ability to accurately recreate complex web layouts.',
-    tags: ['React', 'Vite', 'Tailwind'],
+    tags: ['Vite', 'Tailwind'],
     imageUrl: nikewebsite,
     link: ' https://nike-website-rosy.vercel.app/',
   },
