@@ -39,7 +39,7 @@ export default function Certificates() {
                 once: true,
               }}
               key={index}
-              className='visited:text-purple-600 text-gray-500 flex flex-col items-center hover:scale-105 transition-transform hover:text-slate-900'
+              className='visited:text-purple-600 text-gray-500 flex flex-col items-center hover:scale-105 transition-transform hover:text-indigo-500'
             >
               <p className='mt-4 text-center'>
                 {certificate.title}
