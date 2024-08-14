@@ -53,8 +53,8 @@ export default function About() {
         <span className='font-medium'>
           learning new things and discovering new ideas
         </span>
-        . Currently, I am learning about economics and
-        finance and reading about Keynes, Friedman.
+        . Currently, I am honing my skills on NextJs
+        enviroment to become a fullstack developer.
       </p>
     </motion.section>
   )
