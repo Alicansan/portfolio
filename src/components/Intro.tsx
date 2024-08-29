@@ -3,11 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import photo from '@/public/photo.png'
 import Link from 'next/link'
-import {
-  BsArrowRight,
-  BsGithub,
-  BsLinkedin,
-} from 'react-icons/bs'
+import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { useSectionInView } from '@/lib/hooks'
 
@@ -15,11 +11,7 @@ export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5)
 
   return (
-    <section
-      ref={ref}
-      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'
-      id='home'
-    >
+    <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28' id='home'>
       <div className='flex items-center justify-center '>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -42,17 +34,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold'>
-          Hello, I'm Alican.
-        </span>{' '}
-        I'm a{' '}
-        <span className='font-bold'>
-          Front-End Developer
-        </span>{' '}
-        with <span className='font-bold'>1 year</span> of
-        experience. I enjoy building{' '}
-        <span className='italic'>sites & apps</span>. My
-        focus is{' '}
+        <span className='font-bold'>Hello, I'm Alican.</span> I'm a{' '}
+        <span className='font-bold'>Front-End Developer</span> with <span className='font-bold'>1 year</span> of
+        experience. I enjoy building <span className='italic'>sites & apps</span>. My focus is{' '}
         <span className='underline'>React (Next.js)</span>.
       </motion.h1>
       <motion.div
@@ -67,18 +51,16 @@ export default function Intro() {
            font-medium outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 
           active:scale-105 transition'
         >
-          Contact Me{' '}
-          <BsArrowRight className='opacity-70 group-hover:translate-x-1 ' />
+          Contact Me <BsArrowRight className='opacity-70 group-hover:translate-x-1 ' />
         </Link>
         <a
-          href='/Alicansan_cv.pdf'
+          href='https://docs.google.com/document/d/1stMTRyXrgiUvBUEPhZjAiiYUqLRHJDud/edit?usp=drive_link&ouid=103695135287697822757&rtpof=true&sd=true'
           download={true}
           className='group bg-white text-gray-900 px-7 py-2 rounded-full flex items-center gap-2 
           outline-none focus:scale-110 hover:scale-110  
           active:scale-105 transition border border-black/10'
         >
-          Download CV{' '}
-          <HiDownload className='group-hover:translate-y-1' />
+          Download CV <HiDownload className='group-hover:translate-y-1' />
         </a>
         <a
           className='bg-white text-gray-700 p-4 rounded-full flex items-center gap-2 
