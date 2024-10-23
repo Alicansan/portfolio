@@ -6,7 +6,7 @@ import ActiveSectionContextProvider from '@/context/ActiveSection'
 import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import ThemeContextProvider from '@/context/ThemeContext'
-
+import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -30,6 +30,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Analytics />
             <Footer />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
