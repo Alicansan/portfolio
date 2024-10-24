@@ -7,8 +7,7 @@ import propublic from '@/public/propublic.png'
 import nikewebsite from '@/public/nikewebsite.png'
 import campingsite from '@/public/campingsite.png'
 import expensetracker from '@/public/expensetracker.png'
-
-import { link } from 'fs'
+import gooutnight from '@/public/gooutnight.png'
 
 export const links = [
   {
@@ -111,18 +110,15 @@ export const certificatesData = [
     url: 'https://drive.google.com/file/d/1i1BiN8Eu4P9yrUqPPf60XhDDErpK8QMf/view',
   },
   {
-    title:
-      'Turkish Aeronautical Association University - Python Bootcamp',
+    title: 'Turkish Aeronautical Association University - Python Bootcamp',
     url: 'https://drive.google.com/file/d/13FHh0Z22MMHnbvF3ts2ixVD2e_3xhDSC/view',
   },
   {
-    title:
-      'A.B.B. Techbridge Technology Academy - 3D Modeling, Animation',
+    title: 'A.B.B. Techbridge Technology Academy - 3D Modeling, Animation',
     url: 'https://www.abbtechbridge.com',
   },
   {
-    title:
-      'Beltek - Network Database Programming /MsSQL Server',
+    title: 'Beltek - Network Database Programming /MsSQL Server',
     url: 'https://drive.google.com/file/d/1YdpDZynWjYzAeyFxNCplUM6RhMEjvg8x/view',
   },
   {
@@ -134,18 +130,31 @@ export const certificatesData = [
     url: 'https://www.freecodecamp.org/certification/Alicansan/responsive-web-design',
   },
   {
-    title:
-      'freeCodeCamp -  JavaScript Algorithms and Data Structures',
+    title: 'freeCodeCamp -  JavaScript Algorithms and Data Structures',
     url: 'https://www.freecodecamp.org/certification/Alicansan/javascript-algorithms-and-data-structures-v8',
   },
   {
-    title:
-      'University of Helsinki - Full Stack Open - React (ongoing)',
+    title: 'University of Helsinki - Full Stack Open - React (ongoing)',
     url: 'https://github.com/Alicansan/Fullstackopen',
   },
 ] as const
 
 export const projectsData = [
+  {
+    title: 'GoOutNight',
+    description:
+      "This project is a night-time venue listing app, showcasing places to explore after dark. The frontend is entirely custom-built, and I integrated Payload CMS to manage content via an admin UI. Though the project wasn't completed, this MVP demonstrates my skills in frontend development and CMS integration.",
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'Shadcn',
+      'Payload CMS',
+    ],
+    imageUrl: gooutnight,
+    link: 'https://gooutnight.vercel.app/',
+  },
   {
     title: 'Fetchclicks',
     description:
