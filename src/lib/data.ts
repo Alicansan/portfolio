@@ -43,11 +43,11 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Front-End Developer',
-    location: 'Remote, Germany',
+    location: 'Remote',
     description:
       'Tasked with creating and maintaining various websites along with other company web platforms, aligning with the latest web standards and technologies. Utilized a tech stack including JavaScript, TypeScript, ReactJS, NextJS, and Tailwind CSS to ensure modern, efficient site operations. Deployed updates and new features via Vercel, focusing on optimal performance and user engagement.',
     icon: React.createElement(FaReact),
-    date: '10/2022 – Present',
+    date: 'Futuromy - 10/2022 – Present',
   },
   {
     title: 'Data Curator',
@@ -55,7 +55,7 @@ export const experiencesData = [
     description:
       'Annotated and refined data within specified parameters for companies related to health sciences. Familiar with HTML, CSS, and JSON to gather data from various websites to enhance information value. Managed deadlines, overtime efficiency, and conducted thorough web searches.',
     icon: React.createElement(CgWorkAlt),
-    date: 'Veeva Systems - 02/2023 – 05/2024',
+    date: ' Veeva Systems - 02/2023 – 05/2024',
   },
   {
     title: 'Data Curator (Short Term)',
@@ -63,7 +63,7 @@ export const experiencesData = [
     description:
       'Created and collected utterances based on various situational contents and scenarios for AI training purposes. Gained experience in remote collaboration and adhering to project requirements.',
     icon: React.createElement(CgWorkAlt),
-    date: 'Telus - 10/2022 - 02/2023',
+    date: ' Telus - 10/2022 - 02/2023',
   },
   {
     title: 'Data Clerk',
@@ -71,7 +71,7 @@ export const experiencesData = [
     description:
       'Managed CRUD operations based on a cellular tech company database and their respective CRUD app. Handled XML file formats to transfer Excel data and developed a simple app for an automated mass email system for notifying payers about repossession.',
     icon: React.createElement(CgWorkAlt),
-    date: 'Yılmaz Law Office - 12/2019 - 09/2022',
+    date: ' Yılmaz Law Office - 12/2019 - 09/2022',
   },
   {
     title: 'Associate Degree in Web Design and Coding',
@@ -79,7 +79,7 @@ export const experiencesData = [
     description:
       'Studied web design and coding, mastering HTML, CSS, JavaScript, and React. Developed skills in UX/UI design and built responsive web applications. Gained practical experience with coding projects and problem-solving.',
     icon: React.createElement(LuGraduationCap),
-    date: 'Anadolu University  - 2018 - 2020',
+    date: ' Anadolu University  - 2018 - 2020',
   },
   {
     title: 'Customer Advisor',
@@ -87,7 +87,7 @@ export const experiencesData = [
     description:
       'Answered questions about products and services, provided troubleshooting and tech support via chat, email, and phone. Became familiar with the Apple ecosystem and their conduct in working with third-party firms and apps.',
     icon: React.createElement(CgWorkAlt),
-    date: 'Apple Inc. - 07/2017 - 05/2018',
+    date: ' Apple Inc. - 07/2017 - 05/2018',
   },
   {
     title: 'Bachelors Degree in Archeology',
@@ -95,7 +95,7 @@ export const experiencesData = [
     description:
       'Studied archaeology, developing strong analytical skills and attention to detail. Conducted research and interpreted data, enhancing problem-solving abilities. Gained experience in documenting findings and creating reports, and collaborated effectively on team projects.',
     icon: React.createElement(LuGraduationCap),
-    date: 'Anadolu University - 2012 - 2019',
+    date: ' Anadolu University - 2012 - 2019',
   },
 ] as const
 
