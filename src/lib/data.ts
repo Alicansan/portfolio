@@ -186,7 +186,7 @@ export const projectsData = [
       "Embla Carousel",
     ],
     imageUrl: fetchclicks,
-    link: "https://fetchclicks.vercel.app/",
+    link: "https://fetchclicks-ssbq.vercel.app/",
   },
   {
     title: "Expense Tracker",
