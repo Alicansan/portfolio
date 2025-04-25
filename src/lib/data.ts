@@ -136,8 +136,20 @@ export const certificatesData = [
     url: "https://www.freecodecamp.org/certification/Alicansan/javascript-algorithms-and-data-structures-v8",
   },
   {
-    title: "University of Helsinki - Full Stack Open - React (ongoing)",
-    url: "https://github.com/Alicansan/Fullstackopen",
+    title: "HackerRank - javascript (Basic)",
+    url: "https://www.hackerrank.com/certificates/c4d8728b924a",
+  },
+  {
+    title: "HackerRank - javascript (Intermediate)",
+    url: "https://www.hackerrank.com/certificates/e43f50205dfe",
+  },
+  {
+    title: "HackerRank - React (Basic)",
+    url: "https://www.hackerrank.com/certificates/7a4a15dde486",
+  },
+  {
+    title: "HackerRank - REST Api (Intermediate)",
+    url: "https://www.hackerrank.com/certificates/da056d56e7aa",
   },
 ] as const;
 
